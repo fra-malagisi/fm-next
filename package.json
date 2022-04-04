@@ -3,6 +3,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "build-stats": "cross-env ANALYZE=true npm run build",
     "lint": "next lint",
     "prepare": "husky install"
   },
