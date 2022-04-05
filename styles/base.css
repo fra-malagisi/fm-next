@@ -1,0 +1,9 @@
+:root,
+::before,
+::after {
+  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', sans-serif;
+
+  --geist-success: #0070f3;
+
+  --accents-0: #fff;
+}

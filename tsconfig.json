@@ -8,6 +8,7 @@
     "preserveConstEnums": true,
     "strict": true,
     "alwaysStrict": true,
+    "checkJs": true,
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
 
@@ -26,7 +27,7 @@
 
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "allowJs": false,
+    "allowJs": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
 

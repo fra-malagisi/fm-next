@@ -1,0 +1,29 @@
+{
+  "extends": ["next/core-web-vitals", "eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["import", "unused-imports", "@typescript-eslint"],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    }
+  },
+  "rules": {
+    "@typescript-eslint/no-var-requires": "off",
+    "import/no-anonymous-default-export": "off",
+    "import/order": [
+      "warn",
+      {
+        "groups": [["builtin", "external"], "internal", "parent", ["sibling", "index"], "object"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
+      }
+    ],
+    "no-console": ["error"]
+  }
+}
