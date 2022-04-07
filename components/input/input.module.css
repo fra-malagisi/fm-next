@@ -1,0 +1,27 @@
+.input {
+  @apply my-1 block w-full shadow-sm sm:text-sm rounded-md;
+
+  &--success {
+    @apply border-gray-300 focus:ring-indigo-500 focus:border-indigo-500;
+  }
+
+  &-label {
+    @apply block text-sm font-medium not-sr-only;
+
+    &--error {
+      @apply text-red-500;
+    }
+
+    &--success {
+      @apply text-gray-700;
+    }
+  }
+
+  &-error {
+    @apply border-red-500 focus:ring-red-500 focus:border-red-500;
+
+    &__message {
+      @apply mb-1 text-xs text-red-500;
+    }
+  }
+}
