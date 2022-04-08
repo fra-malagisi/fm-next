@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.2](https://github.com/fra-malagisi/fm-next/compare/v0.0.1...v0.0.2) (2022-04-08)
+
+
+### Features
+
+* add clsx ([add329f](https://github.com/fra-malagisi/fm-next/commit/add329f623db3c305f0bc8fa8038fa627522fbbe))
+* add firt query and api route ([c2bf729](https://github.com/fra-malagisi/fm-next/commit/c2bf729b1d953637614a0bd08e1943b95c74955d))
+* add input component ([06b08ba](https://github.com/fra-malagisi/fm-next/commit/06b08ba81adbe10385206e42d68a36fa2e29b341))
+* add mongoose ([14823c6](https://github.com/fra-malagisi/fm-next/commit/14823c6e6dd8b335f9e373c011659a2df17ae379))
+* add movie schema ([4581832](https://github.com/fra-malagisi/fm-next/commit/4581832aa9deca25ef6f894d5f2190b605d36fc8))
+* add react-hook-form ([3efa057](https://github.com/fra-malagisi/fm-next/commit/3efa057b05f56050ae2dabf50b2aa68cd4f2d50b))
+
+
+### Bug Fixes
+
+* add css module types ([cd80b62](https://github.com/fra-malagisi/fm-next/commit/cd80b62be30cad0a3f45dde6815c29e5d95a8b2e))
+* remove casting on cssmodules ([0c863fe](https://github.com/fra-malagisi/fm-next/commit/0c863fe76270fff205b2d4bbada57629c83e358e))
+* review tsconfig ([0cc0418](https://github.com/fra-malagisi/fm-next/commit/0cc0418cabc00852c636e8289ffc0eedd0947b3e))
+
 ### 0.0.1 (2022-04-06)
 
 
