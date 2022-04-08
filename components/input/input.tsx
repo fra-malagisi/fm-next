@@ -14,8 +14,8 @@ export type InputProps = {
 
 const Input = forwardRef<HTMLInputElement, InputProps>(({ name, id, label, error, ...props }, ref) => {
   const inputClasses = clsx(styles.input, {
-    [styles['input--success'] as string]: !error,
-    [styles['input-error'] as string]: error,
+    [styles['input--success']]: !error,
+    [styles['input-error']]: error,
   });
 
   const labelClasses = clsx(styles['input-label'], {
