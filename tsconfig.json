@@ -6,13 +6,10 @@
     "resolveJsonModule": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "strict": true,
     "alwaysStrict": true,
     "checkJs": true,
     "strictNullChecks": true,
-    "noUncheckedIndexedAccess": true,
 
-    "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
@@ -43,5 +40,5 @@
     }
   },
   "exclude": ["./out/**/*", "./node_modules/**/*"],
-  "include": ["next-env.d.ts"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
