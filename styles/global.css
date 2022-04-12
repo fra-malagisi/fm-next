@@ -4,6 +4,24 @@
 
 @import './base.css';
 
+@layer base {
+  :root {
+    --color-text-base: #fff;
+    --color-text-muted: #c7d2fe;
+    --color-text-inverted: #4f46e5;
+    --color-fill: 67, 56, 202;
+    --color-button-accent: #fff;
+    --color-button-accent-hover: #eef2ff;
+    --color-button-muted: #6366f1;
+  }
+}
+
+.theme-startup {
+  --color-primary: 111 114 185;
+  --color-secondary: 111 114 185;
+  /* ... */
+}
+
 /**
  * Chrome has a bug with transitions on load since 2012!
  *
@@ -41,7 +59,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--accents-0);
+  background-color: #fff;
   overscroll-behavior-x: none;
 }
 
