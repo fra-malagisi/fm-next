@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/fra-malagisi/fm-next/compare/v0.0.2...v0.0.3) (2022-04-13)
+
+
+### Features
+
+* add header ([36f8b78](https://github.com/fra-malagisi/fm-next/commit/36f8b78c7a3a3849caedc094d952a875501ab076))
+* add heroicons ([5eca9a7](https://github.com/fra-malagisi/fm-next/commit/5eca9a787310a9f7ec7d22255b30485c45bea044))
+* add menu icon ([ae6061a](https://github.com/fra-malagisi/fm-next/commit/ae6061a693c99535b48e1f15b66763cebe4bac13))
+* add prettier tailwind ([42f71b2](https://github.com/fra-malagisi/fm-next/commit/42f71b2cdb2aa53da90e99dfeabcc90fcd78cc36))
+* tailwind theme configuration ([1b9ce0c](https://github.com/fra-malagisi/fm-next/commit/1b9ce0cbb78e114f11264ae1c05710d76103cb0a))
+
+
+### Bug Fixes
+
+* add custom focus ring ([ad260a0](https://github.com/fra-malagisi/fm-next/commit/ad260a0d11ceb08f00ffb7623341dac2510521ba))
+* change theme ([b4a1a39](https://github.com/fra-malagisi/fm-next/commit/b4a1a399906c01d69805bdd416207a0a0a7dd716))
+* tsconfig ([f39ca07](https://github.com/fra-malagisi/fm-next/commit/f39ca079ad67786b40a42a3e5592314d7fe33ec4))
+* tsconfig ([19ff866](https://github.com/fra-malagisi/fm-next/commit/19ff866f52dc20fd18dfbaa06364710de3854fdf))
+* tsconfig ([7f3a001](https://github.com/fra-malagisi/fm-next/commit/7f3a0011eec2b34d1a3773c4c9554445fa14ef13))
+
 ### [0.0.2](https://github.com/fra-malagisi/fm-next/compare/v0.0.1...v0.0.2) (2022-04-08)
 
 
