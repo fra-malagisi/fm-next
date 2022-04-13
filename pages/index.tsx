@@ -1,5 +1,6 @@
+import { Header } from 'components';
 import { NextPage } from 'next';
-import { FC } from 'react';
+import React from 'react';
 
 import dbConnect from '../lib/dbConnect';
 import MovieSchema, { Movie } from '../models/movie';
@@ -7,6 +8,7 @@ import MovieSchema, { Movie } from '../models/movie';
 const Home: NextPage = () => {
   return (
     <>
+      <Header title='fm-next' />
       <h1>Home</h1>
     </>
   );

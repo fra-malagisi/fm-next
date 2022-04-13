@@ -1,0 +1,23 @@
+.header {
+  @apply relative bg-skin-fill text-skin-base;
+
+  &__content {
+    @apply flex items-center justify-between border-b-2 border-gray-100 py-6 px-6 md:justify-start md:space-x-10 md:px-4;
+  }
+
+  &__logo {
+    @apply flex justify-start lg:w-0 lg:flex-1;
+  }
+
+  &__mobile-button {
+    @apply inline-flex items-center justify-center rounded-md bg-skin-button-accent p-2 text-skin-inverted hover:bg-skin-button-accent-hover focus:outline-none focus:ring-2 focus:ring-inset focus:ring-skin-base;
+  }
+
+  &__navigation {
+    @apply -my-2 -mr-2 md:hidden;
+  }
+
+  &__end-menu {
+    @apply hidden items-center justify-end md:flex md:flex-1 lg:w-0;
+  }
+}
