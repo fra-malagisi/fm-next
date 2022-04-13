@@ -7,12 +7,13 @@
 @layer base {
   :root {
     --color-text-base: #fff;
-    --color-text-muted: #c7d2fe;
-    --color-text-inverted: #4f46e5;
-    --color-fill: 67, 56, 202;
-    --color-button-accent: #fff;
-    --color-button-accent-hover: #eef2ff;
-    --color-button-muted: #6366f1;
+    --color-text-muted: #ffa737;
+    --color-text-inverted: #343330;
+    --color-fill: 52, 51, 48;
+    --color-button-accent: #ffa737;
+    --color-button-accent-hover: #ff9e1f;
+    --color-button-muted: #343330;
+    --color-focus-ring: #00ff00;
   }
 }
 
