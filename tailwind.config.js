@@ -31,6 +31,11 @@ module.exports = {
           hue: 'var(--color-fill)',
         },
       },
+      ringColor: {
+        skin: {
+          base: 'var(--color-focus-ring)',
+        },
+      },
     },
   },
   plugins: [
