@@ -1,6 +1,7 @@
 import mongoose from 'mongoose';
 
 export type MovieBe = {
+  _id: string;
   Poster_Link: string;
   Series_Title: string;
   Released_Year: number;
@@ -20,6 +21,7 @@ export type MovieBe = {
 };
 
 export type Movie = {
+  id: string;
   imgSrc: string;
   title: string;
   releasedYear: number;
