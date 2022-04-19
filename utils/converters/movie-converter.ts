@@ -1,6 +1,7 @@
 import { Movie, MovieBe } from 'models/movie';
 
 const movieConverter = (movieBe: MovieBe): Movie => ({
+  id: movieBe['_id'],
   imgSrc: movieBe['Poster_Link'],
   title: movieBe['Series_Title'],
   releasedYear: movieBe['Released_Year'],
