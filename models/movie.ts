@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-export type Movie = {
+export type MovieBe = {
   Poster_Link: string;
   Series_Title: string;
   Released_Year: number;
@@ -17,6 +17,25 @@ export type Movie = {
   Star4: string;
   No_of_Votes: string;
   Gross: string;
+};
+
+export type Movie = {
+  imgSrc: string;
+  title: string;
+  releasedYear: number;
+  certificate: number;
+  runtime: string;
+  genre: string;
+  imdbRating: number;
+  overview: string;
+  metaScore: number;
+  director: string;
+  star1: string;
+  star2: string;
+  star3: string;
+  star4: string;
+  noOfVotes: string;
+  gross: string;
 };
 
 const MovieSchema = new mongoose.Schema({
