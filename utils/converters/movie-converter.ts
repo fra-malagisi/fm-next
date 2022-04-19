@@ -1,6 +1,6 @@
 import { Movie, MovieBe } from 'models/movie';
 
-export const movieConverter = (movieBe: MovieBe): Movie => ({
+const movieConverter = (movieBe: MovieBe): Movie => ({
   imgSrc: movieBe['Poster_Link'],
   title: movieBe['Series_Title'],
   releasedYear: movieBe['Released_Year'],
@@ -18,3 +18,5 @@ export const movieConverter = (movieBe: MovieBe): Movie => ({
   noOfVotes: movieBe['No_of_Votes'],
   gross: movieBe.Gross,
 });
+
+export default movieConverter;
