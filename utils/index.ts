@@ -1,1 +1,1 @@
-export { default as movieConverter } from './movie-converter';
+export { default as movieConverter } from './converters/movie-converter';
