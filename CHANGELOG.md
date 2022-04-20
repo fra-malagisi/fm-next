@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.5](https://github.com/fra-malagisi/fm-next/compare/v0.0.4...v0.0.5) (2022-04-20)
+
+
+### Bug Fixes
+
+* moviebox import ([927cabb](https://github.com/fra-malagisi/fm-next/commit/927cabbadf1d34c429eb475d7f514ba160215bce))
+
 ### [0.0.4](https://github.com/fra-malagisi/fm-next/compare/v0.0.3...v0.0.4) (2022-04-20)
 
 
