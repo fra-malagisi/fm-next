@@ -1,0 +1,13 @@
+.movie-box {
+  @apply flex max-h-80 max-w-md overflow-hidden rounded shadow-lg;
+
+  &__image {
+    @apply h-full w-40 flex-initial;
+  }
+  &__content {
+    @apply w-96 flex-col px-4;
+  }
+  &__title {
+    @apply font-bold;
+  }
+}
