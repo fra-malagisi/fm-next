@@ -2,6 +2,27 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/fra-malagisi/fm-next/compare/v0.0.3...v0.0.4) (2022-04-20)
+
+
+### Features
+
+* add layout ([bae5cac](https://github.com/fra-malagisi/fm-next/commit/bae5cacaa3051dcd2fd3d1f54bb640f25f8cb808))
+* add movie box ([cc7182f](https://github.com/fra-malagisi/fm-next/commit/cc7182f97f73965fb2f35fe57bf027f9f4fc7bd1))
+* add movie converte ([739f01b](https://github.com/fra-malagisi/fm-next/commit/739f01be440f77b205fc1218771ead734488cb30))
+
+
+### Bug Fixes
+
+* add amzon host for images ([c60f87c](https://github.com/fra-malagisi/fm-next/commit/c60f87c645a8bba9d0eb27064710672e1238d0c6))
+* add id to movie converter ([99d39ca](https://github.com/fra-malagisi/fm-next/commit/99d39caa8cf99082c0cbfd34a5e71c614f9aa99f))
+* add id to movie model ([2889297](https://github.com/fra-malagisi/fm-next/commit/2889297daece18bde7f493997e5f8b289fc0a2f6))
+* add index for movieconverter ([8d877a2](https://github.com/fra-malagisi/fm-next/commit/8d877a268738594394b632aa1b728ea05e0de625))
+* add index for movieconverter ([92ca187](https://github.com/fra-malagisi/fm-next/commit/92ca187bdf0995139385b94592753a908937aa18))
+* add padding to layout ([9561057](https://github.com/fra-malagisi/fm-next/commit/9561057c2041cd6f3cd6c605ae5a15e2bb29503d))
+* export default movieconverter ([96ad007](https://github.com/fra-malagisi/fm-next/commit/96ad00796359fda32473b79365194864b36dceb4))
+* wrap content in layout ([1ce34b2](https://github.com/fra-malagisi/fm-next/commit/1ce34b2cf1400246a5055fababdb32e539fe4aed))
+
 ### [0.0.3](https://github.com/fra-malagisi/fm-next/compare/v0.0.2...v0.0.3) (2022-04-13)
 
 

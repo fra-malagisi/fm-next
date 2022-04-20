@@ -1,5 +1,5 @@
 {
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "format": "prettier --config ./prettier.config.js --write",
     "dev": "next dev",
