@@ -1,6 +1,6 @@
 import { MovieBox } from 'components/movie-box';
 import { NextPage } from 'next';
-import React, { useEffect } from 'react';
+import React from 'react';
 import { movieConverter } from 'utils';
 
 import dbConnect from '../lib/dbConnect';

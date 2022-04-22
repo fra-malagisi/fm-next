@@ -5,8 +5,8 @@ export type MovieBe = {
   Poster_Link: string;
   Series_Title: string;
   Released_Year: number;
-  Certificate: number;
-  Runtime: string;
+  Certificate: string;
+  Runtime: number;
   Genre: string;
   IMDB_Rating: number;
   Overview: string;
@@ -16,7 +16,7 @@ export type MovieBe = {
   Star2: string;
   Star3: string;
   Star4: string;
-  No_of_Votes: string;
+  No_of_Votes: number;
   Gross: string;
 };
 
@@ -25,8 +25,8 @@ export type Movie = {
   imgSrc: string;
   title: string;
   releasedYear: number;
-  certificate: number;
-  runtime: string;
+  certificate: string;
+  runtime: number;
   genre: string;
   imdbRating: number;
   overview: string;
@@ -36,7 +36,7 @@ export type Movie = {
   star2: string;
   star3: string;
   star4: string;
-  noOfVotes: string;
+  noOfVotes: number;
   gross: string;
 };
 
@@ -54,7 +54,6 @@ const MovieSchema = new mongoose.Schema({
   },
   Certificate: {
     type: String,
-    maxlength: [1, 'Certificate cannot be more than 1 character'],
   },
   Runtime: {
     type: Number,
