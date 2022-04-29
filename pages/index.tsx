@@ -1,5 +1,6 @@
 import { MovieBox } from 'components/movie-box';
-import useMovie from 'hooks/movie';
+import { Paginator } from 'components/paginator';
+import useMovie from 'common/hooks/movie.hook';
 import { NextPage } from 'next';
 import React from 'react';
 import { movieConverter } from 'utils';
@@ -19,6 +20,7 @@ const Home: NextPage<{
         <button onClick={() => setPagination(prev => ({ limit: 1, offset: prev.offset + 1 }))}>+</button>
         <button onClick={() => setPagination(prev => ({ limit: 1, offset: prev.offset - 1 }))}>-</button>
       </div>
+      {total && total > 0 && <Paginator total={total || 0} />}
     </>
   );
 };
