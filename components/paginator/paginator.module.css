@@ -10,11 +10,11 @@
   }
 
   &__button-desktop--previous {
-    @apply relative inline-flex items-center rounded-l-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50;
+    @apply relative inline-flex items-center rounded-l-md border border-gray-300 bg-skin-fill px-2 py-2 text-sm font-medium text-skin-base hover:bg-skin-inverted hover:text-skin-inverted;
   }
 
   &__button-desktop--next {
-    @apply relative inline-flex items-center rounded-r-md border border-gray-300 bg-white px-2 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50;
+    @apply relative inline-flex items-center rounded-r-md border border-gray-300 bg-skin-fill px-2 py-2 text-sm font-medium text-skin-base hover:bg-skin-inverted hover:text-skin-inverted;
   }
 
   &__icon {
@@ -42,13 +42,13 @@
   }
 
   &__page {
-    @apply relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-50;
+    @apply relative inline-flex items-center border border-gray-300 bg-skin-fill px-4 py-2 text-sm font-medium text-skin-base hover:bg-skin-inverted hover:text-skin-inverted;
     &--active {
-      @apply bg-gray-100;
+      @apply bg-skin-inverted text-skin-inverted;
     }
   }
 
   &__separator {
-    @apply relative inline-flex items-center border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700;
+    @apply relative inline-flex items-center border border-gray-300 bg-skin-fill px-4 py-2 text-sm font-medium text-skin-base;
   }
 }
