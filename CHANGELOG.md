@@ -2,6 +2,24 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.6](https://github.com/fra-malagisi/fm-next/compare/v0.0.5...v0.0.6) (2022-04-29)
+
+
+### Features
+
+* add axios ([3df5a00](https://github.com/fra-malagisi/fm-next/commit/3df5a00eb98d7cad6d89573c872954be4140c110))
+* add pagination with swr ([b119cb2](https://github.com/fra-malagisi/fm-next/commit/b119cb2bd0027d49882b2026c510e38fbad5eaf0))
+* add swr ([faa7404](https://github.com/fra-malagisi/fm-next/commit/faa740449c9a764c69178a8f63407c913434e1a2))
+* create paginator ([ab501e6](https://github.com/fra-malagisi/fm-next/commit/ab501e69ec6de1e2a056791bb4d4d4421926044c))
+
+
+### Bug Fixes
+
+* add total property to getmovie response ([39dd42f](https://github.com/fra-malagisi/fm-next/commit/39dd42f363544f25151466f534995f24296cc4b6))
+* change paginator style ([cfd3f72](https://github.com/fra-malagisi/fm-next/commit/cfd3f7204c7f79b8d47fd720353fd90003176e63))
+* correct pagination behavior ([90ebda8](https://github.com/fra-malagisi/fm-next/commit/90ebda89cfb85f5e6a769e0cb115c6171bf73335))
+* movie model types ([ba152d1](https://github.com/fra-malagisi/fm-next/commit/ba152d1256f1bfa4a83ab8013fcc4ac26a23b3d7))
+
 ### [0.0.5](https://github.com/fra-malagisi/fm-next/compare/v0.0.4...v0.0.5) (2022-04-20)
 
 
