@@ -6,9 +6,10 @@ import styles from './paginator.module.css';
 
 export type PaginatorProps = {
   total: number;
+  handlePageChange: (page: number) => void;
 };
 
-const Paginator: FC<PaginatorProps> = ({ total }) => {
+const Paginator: FC<PaginatorProps> = ({ total, handlePageChange }) => {
   const { totalPagesNumber, currentPage, firstItemShown, lastItemShown, pageRange, setCurrentPage } =
     usePaginator(total, 10);
 
@@ -31,7 +32,13 @@ const Paginator: FC<PaginatorProps> = ({ total }) => {
             {currentPage > 1 && (
               <button
                 className={styles['paginator__button-desktop--previous']}
-                onClick={() => setCurrentPage(current => current - 1)}
+                onClick={() => {
+                  setCurrentPage(current => {
+                    const previousPage = current - 1;
+                    handlePageChange(previousPage);
+                    return previousPage;
+                  });
+                }}
               >
                 <span className='sr-only'>Previous</span>
                 <ChevronLeftIcon className={styles['paginator__icon']} aria-hidden='true' />
@@ -45,7 +52,10 @@ const Paginator: FC<PaginatorProps> = ({ total }) => {
                     className={`${styles['paginator__page']} ${
                       page === currentPage ? styles['paginator__page--active'] : ''
                     }`}
-                    onClick={() => setCurrentPage(+page)}
+                    onClick={() => {
+                      setCurrentPage(+page);
+                      handlePageChange(+page);
+                    }}
                   >
                     {page}
                   </button>
@@ -59,7 +69,13 @@ const Paginator: FC<PaginatorProps> = ({ total }) => {
             {currentPage < totalPagesNumber && (
               <button
                 className={styles['paginator__button-desktop--next']}
-                onClick={() => setCurrentPage(current => current + 1)}
+                onClick={() => {
+                  setCurrentPage(current => {
+                    const nextPage = current - 1;
+                    handlePageChange(nextPage);
+                    return nextPage;
+                  });
+                }}
               >
                 <span className='sr-only'>Next</span>
                 <ChevronRightIcon className={styles['paginator__icon']} aria-hidden='true' />

@@ -11,16 +11,18 @@ import MovieSchema, { Movie, MovieBe } from '../models/movie';
 const Home: NextPage<{
   /*movies: Movie[]*/
 }> = () => {
-  const { movies, total, setPagination } = useMovie({ limit: 1, offset: 0 });
+  const { movies, total, isLoading, setPagination } = useMovie({ limit: 10, offset: 0 });
+
+  const handlePageChange = (page: number) => setPagination({ limit: 10, offset: (page - 1) * 10 });
+
   return (
     <>
       <div className='grid grid-cols-3 gap-4'>
-        {total}
         {movies && movies.map(movie => <MovieBox key={movie.id} movie={movie} />)}
         <button onClick={() => setPagination(prev => ({ limit: 1, offset: prev.offset + 1 }))}>+</button>
         <button onClick={() => setPagination(prev => ({ limit: 1, offset: prev.offset - 1 }))}>-</button>
       </div>
-      {total && total > 0 && <Paginator total={total || 0} />}
+      {total && <Paginator total={total || 0} handlePageChange={handlePageChange} />}
     </>
   );
 };
