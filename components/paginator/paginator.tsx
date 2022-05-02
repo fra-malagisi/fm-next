@@ -71,7 +71,7 @@ const Paginator: FC<PaginatorProps> = ({ total, handlePageChange }) => {
                 className={styles['paginator__button-desktop--next']}
                 onClick={() => {
                   setCurrentPage(current => {
-                    const nextPage = current - 1;
+                    const nextPage = current + 1;
                     handlePageChange(nextPage);
                     return nextPage;
                   });
