@@ -15,7 +15,8 @@ const MovieBox: FC<MovieBoxProps> = ({ movie }) => {
         <Image src={movie.imgSrc} alt={`${movie.title} image`} width={100} height={150} layout='responsive' />
       </div>
       <div className={styles['movie-box__content']}>
-        <p>{movie.overview}</p>
+        <h2 className={styles['movie-box__title']}>{movie.title}</h2>
+        <p className={styles['movie-box__overview']}>{movie.overview}</p>
       </div>
     </article>
   );

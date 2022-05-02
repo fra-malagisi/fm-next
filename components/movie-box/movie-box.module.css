@@ -8,6 +8,9 @@
     @apply w-96 flex-col px-4;
   }
   &__title {
-    @apply font-bold;
+    @apply mb-2 font-bold;
+  }
+  &__overview {
+    @apply font-normal line-clamp-6;
   }
 }
