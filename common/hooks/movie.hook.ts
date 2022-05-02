@@ -11,7 +11,8 @@ export type MoviesWithPagination = {
 };
 
 const useMovie = (
-  paginationQuery: PaginationQuery
+  paginationQuery: PaginationQuery,
+  fallbackData?: MoviesWithPagination
 ): {
   setPagination: Dispatch<SetStateAction<PaginationQuery>>;
   movies: Movie[] | undefined;
@@ -25,7 +26,7 @@ const useMovie = (
   const { data, error } = useSWR<MoviesWithPagination, Error>(
     `http://localhost:3001/api/movies/pagination?limit=${pagination.limit}&offset=${pagination.offset}`,
     fetcher,
-    {}
+    { fallbackData }
   );
 
   useEffect(() => {
