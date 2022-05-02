@@ -1,5 +1,5 @@
 .movie-box {
-  @apply flex max-h-80 max-w-md overflow-hidden rounded shadow-lg;
+  @apply flex max-h-80 max-w-md cursor-pointer overflow-hidden rounded shadow-lg duration-200 hover:-translate-y-0.5;
 
   &__image {
     @apply h-full w-40 flex-initial;

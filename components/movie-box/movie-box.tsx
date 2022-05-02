@@ -10,7 +10,7 @@ export type MovieBoxProps = {
 
 const MovieBox: FC<MovieBoxProps> = ({ movie }) => {
   return (
-    <article className={styles['movie-box']}>
+    <article className={styles['movie-box']} role='button'>
       <div className={styles['movie-box__image']}>
         <Image src={movie.imgSrc} alt={`${movie.title} image`} width={100} height={150} layout='responsive' />
       </div>
