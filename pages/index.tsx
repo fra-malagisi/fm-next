@@ -1,5 +1,6 @@
 import axios from 'axios';
 import useMovie, { MoviesWithPagination } from 'common/hooks/movie.hook';
+import { Input } from 'components';
 import { MovieBox } from 'components/movie-box';
 import { Paginator } from 'components/paginator';
 import { NextPage } from 'next';
@@ -21,7 +22,12 @@ const Home: NextPage<{
 
   return (
     <>
-      <div className='grid grid-cols-3 gap-4'>
+      <div className='mb-4 flex justify-center'>
+        <div className='w-4/12'>
+          <Input name='movie-filter' label='Filter movies' />
+        </div>
+      </div>
+      <div className='mb-4 grid grid-cols-3 gap-4'>
         {movies && movies.map(movie => <MovieBox key={movie.id} movie={movie} />)}
       </div>
       {total && <Paginator total={total || 0} handlePageChange={handlePageChange} />}

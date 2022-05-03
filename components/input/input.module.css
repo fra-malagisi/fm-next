@@ -1,12 +1,12 @@
 .input {
-  @apply my-1 block w-full shadow-sm sm:text-sm rounded-md;
+  @apply my-1 block w-full rounded border p-2 shadow-sm sm:text-sm;
 
   &--success {
-    @apply border-gray-300 focus:ring-indigo-500 focus:border-indigo-500;
+    @apply border-gray-300 focus:border-indigo-500 focus:ring-indigo-500;
   }
 
   &-label {
-    @apply block text-sm font-medium not-sr-only;
+    @apply not-sr-only block text-sm font-medium;
 
     &--error {
       @apply text-red-500;
@@ -18,7 +18,7 @@
   }
 
   &-error {
-    @apply border-red-500 focus:ring-red-500 focus:border-red-500;
+    @apply border-red-500 focus:border-red-500 focus:ring-red-500;
 
     &__message {
       @apply mb-1 text-xs text-red-500;
