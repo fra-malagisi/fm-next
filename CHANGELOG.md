@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.7](https://github.com/fra-malagisi/fm-next/compare/v0.0.6...v0.0.7) (2022-05-09)
+
+
+### Features
+
+* add animation on movie card ([92fd95d](https://github.com/fra-malagisi/fm-next/commit/92fd95d33929322a03d07dbaee11d9aed9802c4d))
+* add button ([94ed47a](https://github.com/fra-malagisi/fm-next/commit/94ed47a4c1404acaae6f3965c48ab55807cf4fe5))
+* add react-hook-form ([4859dee](https://github.com/fra-malagisi/fm-next/commit/4859deee1f4f51ed50f03b2ec6561e64958b5850))
+* add SSR on homepage ([0b84bc4](https://github.com/fra-malagisi/fm-next/commit/0b84bc4de585931f2673d8b9587cbb80a7f3473d))
+
+
+### Bug Fixes
+
+* input-text style ([08a97df](https://github.com/fra-malagisi/fm-next/commit/08a97dfdf9ceb9f40cfdaaa767f0901da7b1ff06))
+* pagination next ([9b32a17](https://github.com/fra-malagisi/fm-next/commit/9b32a17a2dfc4f644129919d50baf418603688e0))
+* style movie card ([5270ece](https://github.com/fra-malagisi/fm-next/commit/5270ece50efce4b4ac18996b060c0b1a9119e9a4))
+
 ### [0.0.6](https://github.com/fra-malagisi/fm-next/compare/v0.0.5...v0.0.6) (2022-04-29)
 
 
