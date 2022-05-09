@@ -44,6 +44,10 @@ const usePaginator = (total: number, limit: number, deltaPaginator = 2): UsePagi
     setPageRange(generatePageRange());
   }, [generatePageRange, totalPagesNumber]);
 
+  useEffect(() => {
+    setTotalPagesNumber(Math.ceil(total / limit));
+  }, [total]);
+
   return {
     totalPagesNumber,
     currentPage,
