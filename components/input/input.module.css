@@ -1,6 +1,13 @@
 .input {
-  @apply my-1 block w-full rounded border p-2 shadow-sm sm:text-sm;
+  @apply block w-full rounded border p-2 shadow-sm sm:text-sm;
 
+  &__block {
+    @apply w-full;
+  }
+
+  &__container {
+    @apply relative;
+  }
   &--success {
     @apply border-gray-300 focus:border-indigo-500 focus:ring-indigo-500;
   }
