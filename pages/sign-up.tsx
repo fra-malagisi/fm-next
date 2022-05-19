@@ -10,11 +10,7 @@ type SignUpFormType = {
 };
 
 const SignUp: NextPage<unknown> = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<SignUpFormType>();
+  const { register } = useForm<SignUpFormType>();
   return (
     <section className='flex'>
       <div className=' flex h-screen w-4/6 flex-col'>
