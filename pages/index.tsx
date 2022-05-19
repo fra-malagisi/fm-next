@@ -7,6 +7,10 @@ const Home: NextPage<unknown> = () => {
       <a href='googlegmail://'>GMAIL</a>
       <br />
       <a href='ms-outlook://'>OUTLOOK</a>
+      <br />
+      <a href='message://'>MAIL</a>
+      <br />
+      <a href='mail://'>MAIL</a>
     </>
   );
 };
