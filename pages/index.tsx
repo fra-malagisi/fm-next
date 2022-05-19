@@ -5,7 +5,8 @@ const Home: NextPage<unknown> = () => {
   return (
     <>
       <a href='googlegmail://'>GMAIL</a>
-      <a href='outlook://'>OUTLOOK</a>
+      <br />
+      <a href='ms-outlook://'>OUTLOOK</a>
     </>
   );
 };
