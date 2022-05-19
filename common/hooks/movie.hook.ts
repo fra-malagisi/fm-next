@@ -19,7 +19,7 @@ const useMovie = (
   error: Error | undefined;
   isLoading: boolean;
 } => {
-  const host = `${process.env.NEXT_PUBLIC_API_HOST}`;
+  // const host = `${process.env.NEXT_PUBLIC_API_HOST}`;
   const [pagination, setPagination] = useState<PaginationQuery>(paginationQuery);
   const [total, setTotal] = useState<number>(0);
   const { data, error } = useSWR<MoviesWithPagination, Error>(
