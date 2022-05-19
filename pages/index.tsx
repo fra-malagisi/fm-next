@@ -9,8 +9,6 @@ const Home: NextPage<unknown> = () => {
       <a href='ms-outlook://'>OUTLOOK</a>
       <br />
       <a href='message://'>MAIL</a>
-      <br />
-      <a href='mail://'>MAIL</a>
     </>
   );
 };
