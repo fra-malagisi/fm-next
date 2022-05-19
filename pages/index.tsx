@@ -4,7 +4,7 @@ import React from 'react';
 const Home: NextPage<unknown> = () => {
   return (
     <>
-      <a href='instagram://'>Open iOS app</a>
+      <a href='googlemail://'>Open iOS app</a>
     </>
   );
 };
