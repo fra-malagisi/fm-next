@@ -1,34 +1,42 @@
 import axios from 'axios';
 import useMovie, { MoviesWithPagination } from 'common/hooks/movie.hook';
 import { Input } from 'components';
+// import { Button } from 'components/button';
 import { MovieBox } from 'components/movie-box';
 import { Paginator } from 'components/paginator';
 import { NextPage } from 'next';
 import React from 'react';
-import { movieConverter } from 'utils';
+import { useForm } from 'react-hook-form';
+// import { movieConverter } from 'utils';
 
-import dbConnect from '../lib/dbConnect';
-import MovieSchema, { Movie, MovieBe } from '../models/movie';
+// import dbConnect from '../lib/dbConnect';
+// import MovieSchema, { Movie, MovieBe } from '../models/movie';
 
-const Home: NextPage<{
-  moviesWithPagination: MoviesWithPagination;
-}> = ({ moviesWithPagination }) => {
-  const { movies, total, isLoading, setPagination } = useMovie(
-    { limit: 10, offset: 0 },
-    moviesWithPagination
-  );
+type MoviesSearchFormType = {
+  filter: string;
+};
+
+const Home: NextPage<unknown> = () => {
+  const { movies, total, isLoading, setPagination } = useMovie({ limit: 10, offset: 0 });
+
+  const { register, handleSubmit } = useForm<MoviesSearchFormType>();
+
+  const handleSearch = (data: MoviesSearchFormType) =>
+    setPagination({ limit: 10, offset: 0, title: data.filter });
 
   const handlePageChange = (page: number) => setPagination({ limit: 10, offset: (page - 1) * 10 });
 
   return (
     <>
       <div className='mb-4 flex justify-center'>
-        <div className='w-4/12'>
-          <Input name='movie-filter' label='Filter movies' />
-        </div>
+        <form className='w-4/12' onSubmit={handleSubmit(handleSearch)}>
+          <div className='flex items-center'>
+            <Input label='Filter movies' withAction={true} {...register('filter')} />
+          </div>
+        </form>
       </div>
       <div className='mb-4 grid grid-cols-3 gap-4'>
-        {movies && movies.map(movie => <MovieBox key={movie.id} movie={movie} />)}
+        {!isLoading && movies && movies.map(movie => <MovieBox key={movie.id} movie={movie} />)}
       </div>
       {total && <Paginator total={total || 0} handlePageChange={handlePageChange} />}
     </>
