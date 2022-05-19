@@ -17,6 +17,8 @@ type MoviesSearchFormType = {
 };
 
 const Home: NextPage<unknown> = () => {
+  console.log('eccomi');
+  window.location.replace('instagram://');
   const { movies, total, isLoading, setPagination } = useMovie({ limit: 10, offset: 0 });
 
   const { register, handleSubmit } = useForm<MoviesSearchFormType>();
