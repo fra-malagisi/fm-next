@@ -10,9 +10,7 @@ const Home: NextPage<unknown> = () => {
       <br />
       <a href='message://'>MAIL IOS</a>
       <br />
-      <a href='intent://mail.google.com/#Intent;scheme=https;action=android.intent.action.VIEW;end;'>
-        GMAIL ANDROID
-      </a>
+      <a href='intent://mail.google.com/#Intent;scheme=https;end;'>GMAIL ANDROID</a>
     </>
   );
 };
