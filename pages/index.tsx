@@ -4,13 +4,13 @@ import React from 'react';
 const Home: NextPage<unknown> = () => {
   return (
     <>
-      <a href='googlegmail://'>GMAIL</a>
+      <a href='googlegmail://'>GMAIL IOS</a>
       <br />
-      <a href='ms-outlook://'>OUTLOOK</a>
+      <a href='ms-outlook://'>OUTLOOK IOS</a>
       <br />
-      <a href='message://'>MAIL</a>
+      <a href='message://'>MAIL IOS</a>
       <br />
-      <a href='intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end'>ANDROID</a>
+      <a href='intent://gmail#Intent;scheme=https;package=com.google.android.gm;end'>GMAIL ANDROID</a>
     </>
   );
 };
