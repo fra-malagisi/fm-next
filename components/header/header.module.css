@@ -2,7 +2,7 @@
   @apply relative bg-skin-fill text-skin-base;
 
   &__content {
-    @apply flex items-center justify-between border-b-2 border-gray-100 py-6 px-6 md:justify-start md:space-x-10 md:px-4;
+    @apply flex items-center justify-between py-6 px-6 md:justify-start md:space-x-10 md:px-4;
   }
 
   &__logo {
