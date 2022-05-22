@@ -27,9 +27,15 @@ module.exports = {
           'button-muted': 'var(--color-button-muted)',
         },
       },
+      colors: {
+        skin: {
+          primary: 'var(--color-fill-hex)',
+          secondary: 'var(--color-inverted)',
+        },
+      },
       gradientColorStops: {
         skin: {
-          hue: 'var(--color-fill)',
+          hue: 'var(--color-fill-hex)',
         },
       },
       ringColor: {
