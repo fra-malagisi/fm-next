@@ -10,13 +10,17 @@ const Home: NextPage<unknown> = () => {
       <br />
       <a href='message://'>MAIL IOS</a>
       <br />
-      <a href='intent://mail.google.com/mail/#Intent;scheme=https;action=android.intent.action.MAIN;category=android.intent.category.APP_EMAIL;end'>
+      <a href='intent://mail.google.com/mail/#Intent;scheme=https;package=com.google.android.gm;action=android.intent.action.MAIN;category=android.intent.category.APP_EMAI;end'>
         GMAIL ANDROID
       </a>
       <br />
-      <a href='intent://https://outlook.live.com/#Intent;scheme=https;package=com.microsoft.office.outlook;end'>
+      <a href='intent://outlook.live.com/#Intent;scheme=https;package=com.microsoft.office.outlook;end'>
         OUTLOOK ANDROID
       </a>
+      <a href='intent://outlook.live.com/#Intent;scheme=https;package=com.samsung.android.email.provider;end'>
+        SAMSUNG MAIL ANDROID
+      </a>
+      <a href='intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end'>INSTAGRAM</a>
     </>
   );
 };
