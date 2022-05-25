@@ -17,9 +17,11 @@ const Home: NextPage<unknown> = () => {
       <a href='intent://outlook.live.com/#Intent;scheme=https;package=com.microsoft.office.outlook;end'>
         OUTLOOK ANDROID
       </a>
+      <br />
       <a href='intent://outlook.live.com/#Intent;scheme=https;package=com.samsung.android.email.provider;end'>
         SAMSUNG MAIL ANDROID
       </a>
+      <br />
       <a href='intent://instagram.com/#Intent;scheme=https;package=com.instagram.android;end'>INSTAGRAM</a>
     </>
   );
