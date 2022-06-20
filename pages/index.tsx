@@ -28,7 +28,7 @@ const Home: NextPage<unknown> = () => {
 
   return (
     <>
-      <div className='mb-4 flex justify-center'>
+      <div className='mb-4 mt-4 flex justify-center'>
         <form className='w-4/12' onSubmit={handleSubmit(handleSearch)}>
           <div className='flex items-center'>
             <Input label='Filter movies' withAction={true} {...register('filter')} />
@@ -39,7 +39,6 @@ const Home: NextPage<unknown> = () => {
         {!isLoading && movies && movies.map(movie => <MovieBox key={movie.id} movie={movie} />)}
       </div>
       {total && <Paginator total={total || 0} handlePageChange={handlePageChange} />}
-      <div className='mb-4 flex justify-center'>prova</div>
     </>
   );
 };

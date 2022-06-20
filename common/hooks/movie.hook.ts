@@ -33,7 +33,7 @@ const useMovie = (
     if (data && data?.total > 0 && data?.total !== total) {
       setTotal(data?.total || 0);
     }
-  }, [data?.total, total]);
+  }, [data, data?.total, total]);
 
   return {
     setPagination,
